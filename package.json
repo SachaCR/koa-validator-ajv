@@ -1,0 +1,35 @@
+{
+  "name": "koa-validator-ajv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SachaCR/koa-validator-ajv.git"
+  },
+  "keywords": [
+    "ajv",
+    "koa",
+    "validator",
+    "payload",
+    "schema"
+  ],
+  "author": "SachaCR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SachaCR/koa-validator-ajv/issues"
+  },
+  "homepage": "https://github.com/SachaCR/koa-validator-ajv#readme",
+  "peerDependencies": {
+    "ajv": "^6.9.2"
+  },
+  "dependencies": {
+    "verror": "^1.10.0"
+  },
+  "devDependencies": {
+    "ava": "^1.2.1"
+  }
+}
