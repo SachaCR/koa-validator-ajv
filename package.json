@@ -1,7 +1,7 @@
 {
   "name": "koa-validator-ajv",
   "version": "1.0.0",
-  "description": "",
+  "description": "Koa middleware factory to validate, querystring, body payload, route params",
   "main": "index.js",
   "scripts": {
     "test": "nyc --reporter=html --reporter=text-summary ava "
