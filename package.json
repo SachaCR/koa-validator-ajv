@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,8 @@
     "url": "https://github.com/SachaCR/koa-validator-ajv/issues"
   },
   "homepage": "https://github.com/SachaCR/koa-validator-ajv#readme",
-  "peerDependencies": {
-    "ajv": "^6.9.2"
-  },
   "dependencies": {
+    "ajv": "^6.9.2",
     "verror": "^1.10.0"
   },
   "devDependencies": {

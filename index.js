@@ -7,6 +7,7 @@ function validatorFactory(schema, ajv) {
     ajv = new Ajv({
       allErrors: true,
       useDefaults: true,
+      schemaId: 'auto',
     })
   }
 
@@ -25,7 +26,7 @@ function validatorFactory(schema, ajv) {
 }
 
 function middlewareFactory(schema, target, ajv) {
-  const validator = validatorFactory(schema, options)
+  const validator = validatorFactory(schema, ajv)
   return async function (ctx, next) {
     try {
       validator(ctx.request[target])
@@ -37,7 +38,7 @@ function middlewareFactory(schema, target, ajv) {
 }
 
 function paramsValidator(schema, ajv) {
-  const validator = validatorFactory(schema, options)
+  const validator = validatorFactory(schema, ajv)
   return async function (ctx, next) {
     try {
       validator(ctx.params)
