@@ -35,7 +35,6 @@ In this example the call can looks like : `GET http://host.com/example/query?nam
 ```js
 const koaValidator = require('koa-validator-ajv')
 
-
 const schema = {
   id: 'querySchema',
   type: 'object',
